@@ -1,0 +1,14 @@
+C:\Projekte\AzubiApp_1\AzubiApp_1\bin\Debug\net10.0\AzubiApp_1.exe
+C:\Projekte\AzubiApp_1\AzubiApp_1\bin\Debug\net10.0\AzubiApp_1.deps.json
+C:\Projekte\AzubiApp_1\AzubiApp_1\bin\Debug\net10.0\AzubiApp_1.runtimeconfig.json
+C:\Projekte\AzubiApp_1\AzubiApp_1\bin\Debug\net10.0\AzubiApp_1.dll
+C:\Projekte\AzubiApp_1\AzubiApp_1\bin\Debug\net10.0\AzubiApp_1.pdb
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.AssemblyInfoInputs.cache
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.AssemblyInfo.cs
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.csproj.CoreCompileInputs.cache
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.dll
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\refint\AzubiApp_1.dll
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.pdb
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\AzubiApp_1.genruntimeconfig.cache
+C:\Projekte\AzubiApp_1\AzubiApp_1\obj\Debug\net10.0\ref\AzubiApp_1.dll

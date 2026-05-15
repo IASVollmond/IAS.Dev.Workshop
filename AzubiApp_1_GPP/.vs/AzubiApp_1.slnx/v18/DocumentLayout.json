@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projekte\\AzubiApp_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11AFE30D-9824-1F1B-817F-1A06ACC0C053}|AzubiApp_1\\AzubiApp_1.csproj|c:\\projekte\\azubiapp_1\\azubiapp_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11AFE30D-9824-1F1B-817F-1A06ACC0C053}|AzubiApp_1\\AzubiApp_1.csproj|solutionrelative:azubiapp_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projekte\\AzubiApp_1\\AzubiApp_1\\Program.cs",
+              "RelativeDocumentMoniker": "AzubiApp_1\\Program.cs",
+              "ToolTip": "C:\\Projekte\\AzubiApp_1\\AzubiApp_1\\Program.cs",
+              "RelativeToolTip": "AzubiApp_1\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T08:01:04.003Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {}
   },
@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projekte\\AzubiApp_1\\AzubiApp_1\\AzubiApp_1.csproj",
+      "projectUniqueName": "C:\\Projekte\\IAS.Dev.Workshop\\AzubiApp_1_GPP\\AzubiApp_1\\AzubiApp_1.csproj",
       "projectName": "AzubiApp_1",
-      "projectPath": "C:\\Projekte\\AzubiApp_1\\AzubiApp_1\\AzubiApp_1.csproj",
+      "projectPath": "C:\\Projekte\\IAS.Dev.Workshop\\AzubiApp_1_GPP\\AzubiApp_1\\AzubiApp_1.csproj",
       "packagesPath": "C:\\Users\\giuliopio.planta\\.nuget\\packages\\",
-      "outputPath": "C:\\Projekte\\AzubiApp_1\\AzubiApp_1\\obj\\",
+      "outputPath": "C:\\Projekte\\IAS.Dev.Workshop\\AzubiApp_1_GPP\\AzubiApp_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

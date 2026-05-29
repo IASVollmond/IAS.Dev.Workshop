@@ -19,7 +19,7 @@ namespace azubiapp_1
                 Console.WriteLine("Bitte geben Sie die Nummer des Menüpunkts ein, denn Sie benutzen möchten");
                 Console.WriteLine("1. Liste Azubis");
                 Console.WriteLine("2. Azubi hinzufügen");
-                Console.WriteLine("3. Azubi anmelden");
+                Console.WriteLine("3. ");
                 Console.WriteLine("4. Azubi abmelden");
                 Console.WriteLine("5. Countdown bis IHK Abgabe");
                 Console.WriteLine();
@@ -27,38 +27,35 @@ namespace azubiapp_1
 
                 string eingabe = Console.ReadLine();
 
-                if (eingabe == "1")
+                switch (eingabe)
                 {
-                    AzubisAnzeigen(azubis);
-                }
+                    case "1":
+                        AzubisAnzeigen(azubis);
+                        break;
 
-                else if (eingabe == "2")
-                {
-                    Hinzufügen(azubis);
-                }
+                    case "2":
+                        Hinzufuegen(azubis); 
+                        break;
 
-                else if (eingabe == "3")
-                {
-                    Console.WriteLine("\nAnmelden");
-                }
+                    case "3":
+                        Console.WriteLine("\nAnmelden");
+                        break;
 
-                else if (eingabe == "4")
-                {
-                    Console.WriteLine("\nAbmelden");
-                }
+                    case "4":
+                        Console.WriteLine("\nAbmelden");
+                        break;
 
-                else if (eingabe == "5")
-                {
-                    Console.WriteLine("\nCountdown");
-                }
+                    case "5":
+                        Console.WriteLine("\nCountdown");
+                        CountdownPruefung();
+                        break;
 
-                else
-                {
-                    Console.WriteLine("\nUngültige Eingabe. Bitte nur Angaben zwischen 1-5 eingeben");
+                    default:
+                        Console.WriteLine("\nUngültige Eingabe. Bitte nur Angaben zwischen 1-5 eingeben");
+                        break;
                 }
                 Console.WriteLine("");
             }
-            
         }
         static void AzubisAnzeigen(List<string> meineazubis)
         {
@@ -68,13 +65,45 @@ namespace azubiapp_1
                 Console.WriteLine($"\n{i + 1}. {meineazubis[i]}");
             }
         }
-        static void Hinzufügen(List<string> meineazubis)
+        static void Hinzufuegen(List<string> meineazubis)
         {
             Console.WriteLine("\nHinzufügen");
             Console.WriteLine("\nBitte geben Sie einen den Namen des Azubis ein, den Sie hinzufügen möchten.");
             string nameneu = Console.ReadLine();
             meineazubis.Add(nameneu);
             Console.WriteLine($"{nameneu} wurde der Liste hinzugefügt");
+        }
+        static void CountdownPruefung()
+        {
+            DateTime datumPruefung = DateTime.Parse("24.02.2027");
+            DateTime aktuellesDatum = DateTime.Now;
+            TimeSpan countdown = datumPruefung - aktuellesDatum;
+            Console.WriteLine($"Du hast noch {countdown.Days} Tage, {countdown.Hours} Stunden, {countdown.Minutes} Minuten und" +
+                $" {countdown.Seconds} Sekunden bis zur Zwischenprüfung am {datumPruefung:dd.MM.yyyy}");
+
+
+
+
+
+
+
+
+
+
+            /*DateTime jetzt = DateTime.Now;
+
+            TimeSpan verbleibend = zieldatum - jetzt;
+
+            if (verbleibend.TotalSeconds <= 0)
+            {
+                Console.WriteLine("Das Datum liegt in der Vergangenheit!");
+                return;
+            }
+            Console.WriteLine($"Countdown bis {zieldatum:dd.MM.yyyy}");
+            Console.WriteLine($"  Tage:    {verbleibend.Days}");
+            Console.WriteLine($"  Stunden: {verbleibend.Hours}");
+            Console.WriteLine($"  Minuten: {verbleibend.Minutes}");
+            Console.WriteLine($"  Sekunden:{verbleibend.Seconds}");*/
         }
     }
 }

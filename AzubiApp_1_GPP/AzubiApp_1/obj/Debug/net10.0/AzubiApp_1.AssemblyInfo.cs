@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzubiApp_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a7fcae91564ca7a38d91f1d936d8d1c08f64932")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d85db2c02803b8cbdfb48afff6067b3f724c3bce")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzubiApp_1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzubiApp_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,12 +6,15 @@ namespace kundenverwaltung
     {
         static void Main(string[] args)
         {
-            List<string> kunden = new List<string>() { "Herr Urhan", "Herr Klostermann", "Frau Wiegert", "Frau Wecht" };
+            List<string> kunden = new List<string>() { "Kaya Urhan", "Rene Klostermann", "Dagmar Wiegert", "Frank Bormann" };
 
             Console.WriteLine("*******************");
             Console.WriteLine("~Kundenverwaltung~");
             Console.WriteLine("*******************");
             Console.WriteLine("");
+            File.Exists(@"C:\Projekte\IAS.Dev.Workshop\Kundenverwaltung\Kundenliste.txt");
+            File.ReadAllLines(@"C:\Projekte\IAS.Dev.Workshop\Kundenverwaltung\Kundenliste.txt");
+
 
             bool hilfesvar = true;
             while (hilfesvar)
@@ -36,10 +39,12 @@ namespace kundenverwaltung
 
                     case "2":
                         Hinzufuegen(kunden);
+                        File.WriteAllLines(@"C:\Projekte\IAS.Dev.Workshop\Kundenverwaltung\Kundenliste.txt", kunden);
                         break;
 
                     case "3":
                         Loeschen(kunden);
+                        File.WriteAllLines(@"C:\Projekte\IAS.Dev.Workshop\Kundenverwaltung\Kundenliste.txt", kunden);
                         break;
 
                     case "4":
@@ -72,18 +77,40 @@ namespace kundenverwaltung
         }
         static void Loeschen(List<string> meinekunden)
         {
+            List<string> vornamen = new();
+            List<string> nachnamen = new();
+
+            foreach (string kunde in meinekunden)
+            {
+                string[] teile = kunde.Split(' ');
+
+                if (teile.Length >= 2)
+                {
+                    vornamen.Add(teile[0]);
+                    nachnamen.Add(teile[1]);
+                }
+            }
             Console.WriteLine("Geben Sie den Namen des Kunden an, der aus der Liste entfernt werden soll");
             string entfernen = Console.ReadLine();
-            if (meinekunden.Contains(entfernen))
+            bool gefunden = false;
+
+            for (int i = 0; i < meinekunden.Count; i++)
             {
-                meinekunden.Remove(entfernen);
-                Console.WriteLine($"{entfernen} wurde aus der Liste entfernt");
+                if (vornamen[i].Equals(entfernen, StringComparison.OrdinalIgnoreCase) ||
+                    nachnamen[i].Equals(entfernen, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine($"{meinekunden[i]} wurde aus der Liste entfernt.");
+                    meinekunden.RemoveAt(i);
+                    gefunden = true;
+                    break;
+                }
+            }
+            if (!gefunden)
+            {
+                Console.WriteLine("Der Kunde ist nicht in der Liste vorhanden.");
             }
 
-            else
-            {
-                Console.WriteLine($"Der Kunde ist nicht in der Liste vohanden");
-            }
         }
     }
 }
+
